@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Moped Collector Game</title>
+		<!-- reset style sheet -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<!-- page style sheet -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<!-- title image for the web game -->
+		<img class="banner" src="assets/images/mopedcollector.png" alt="Moped Collector">
+		<!-- instructions section -->
+		<div class="rules">
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four mopeds below. By clicking on a moped you will add a specific amount of points to your total score.</p>
+			<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+			<p>The value of each moped is hidden from you until you click on it.</p>
+			<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		</div>
+
+		<div class="info">
+			<!-- random number box -->		
+			<div id="randomNumber">36</div>
+			<!-- wins and losses section  -->
+			<div class="tracker">	
+				<div id="wins">Wins: 0</div>
+				<div id="losses">Losses: 0</div>
+			</div>
+		</div>
+		<!-- images for the icons -->
+		<div class="images">
+			<img src="assets/images/hobbit.png" alt="Hobbit" id="img1">
+			<img src="assets/images/peugeot.png" alt="Peugeot" id="img2">
+			<img src="assets/images/puch.png" alt="Puch" id="img3">
+			<img src="assets/images/vespa.png" alt="Vespa" id="img4">
+		</div>
+		<!-- total score text box and the calculated score -->
+		<div class="info">
+			<p class="totalscore">Your total score is:</p>
+			<p id="score">0</p>
+		</div>
+		<!-- link to javascript file -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	</body>
+</html>
